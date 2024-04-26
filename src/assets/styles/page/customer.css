@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 자주묻는 질문 */
+.acco-question .acco-tit .text {
+  width:100%;
+	overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.acco-question .acco-tit[data-state="open"] .text {	
+	text-overflow: inherit;
+	overflow: visible;
+  white-space: wrap;
+  word-break: break-all;
+}

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import UnstructuredShop from "~/components/display/shop/unstructured-shop.vue";
+import UnstructuredShop from "~/components/display/shop/UnstructuredShop.vue";
 
 const { params } = useRoute()
 const shopNo = params.shopNo as string

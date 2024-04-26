@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {	
+	/* .search-filter .filter-title .reset-button {
+		@apply px-[10px] py-[3px] ml-[10px];
+	} */
+	.img_soldout::before{
+		@apply z-10 content-['품절'] absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 text-white ;
+	}
+	.img_soldout::after{
+		@apply content-[''] absolute w-full top-0 left-0 h-full bg-black opacity-40;
+	}
+	
+
+	/* 설문조사 척도형 */
+	.rating-item {
+		position: relative;
+	}
+	.rating-item::after {
+		/* content: '';
+		position: absolute;
+		top: 75%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 100%;
+		height: 1px;
+		background-color: #ccc; 
+		z-index: 1; */
+	}
+	.rating-item .item {
+		position:relative;
+		align-items: center;
+		text-align:center;
+	}
+	.rating-item .item:first-child::after {
+		display:none;
+	}
+	.rating-item .item::after {
+		content: '';
+		position: absolute;
+		bottom: 10px;
+		left: -50%;
+		width: 100%;
+		height: 1px;
+		background-color: #ccc; 
+	}
+	.rating-item .item > span {
+		margin-top:auto;
+	}
+	
+	.rating-item img {
+		z-index: 1;
+	}
+}

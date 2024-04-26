@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .display1 {
+    @apply text-4xl pc:text-5xl; /* 36px, 48px*/
+  }
+  .heading1 {
+    @apply text-3xl pc:text-4xl; /* 30px, 36px*/
+  }
+  .heading2 {
+    @apply text-2xl pc:text-3xl; /* 24px, 30px*/
+  }
+  .subtitle1 {
+    @apply text-xl pc:text-2xl; /* 20px, 24px*/
+  }
+  .subtitle2 {
+    @apply text-base; /* 16px */
+  }
+  .body1 {
+    @apply text-sm; /* 14px */
+  }
+  .body2 {
+    @apply text-xs; /* 12px */
+  }
+  .caption1 {
+    @apply text-xs; /* 12px */
+  }
+
+  .ellipsis-2 {
+    @apply block whitespace-normal line-clamp-2 text-ellipsis;
+  }
+  /* 4.8일 추가 _정해영 */
+  .subtitle3 {
+    @apply text-[15px]
+  }
+  .body3 {
+    @apply text-[15px]
+  }
+  .body4 {
+    @apply text-[13px]
+  }
+
+}

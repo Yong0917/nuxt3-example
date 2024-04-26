@@ -3,9 +3,7 @@
 </script>
 
 <template>
-  <div>
-    review01
-  </div>
+
 </template>
 
 <style scoped>

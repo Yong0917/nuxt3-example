@@ -1,8 +1,11 @@
 <script setup lang="ts">
 import type {CornerProps} from "~/types/shop-data-model";
 import {getCornerContent} from "~/composables/display/ShopCornerUtils";
+import CornerSection from "~/components/fo/main/CornerSection.vue";
+import SectionTitle from "~/components/ui/section-title.vue";
 
 const {data} = defineProps<CornerProps>()
+
 const contentList = getCornerContent({
   setList: data.setList,
   props: {
@@ -22,12 +25,18 @@ const imageList = computed(() => {
 </script>
 
 <template>
-  <div>
-    ImageBanner11
-  </div>
-  <template v-for="(item, index) in imageList" :key="index">
-    <span>{{item.contPathNm}}</span>
-  </template>
+  <CornerSection>
+<!--    <template>-->
+      <SectionTitle v-if="data.mappTtl" className="font-bold">
+        {{data.mappTtl}}
+      </SectionTitle>
+<!--      <div class="main-brand-slide default-type">-->
+<!--        <template v-for="(item, index) in imageList" :key="`main_brand_banner_${index}`">-->
+<!--          <nuxt-img :src="`https://img-stg.x2bee.com/${item.contPathNm}`" width="384"></nuxt-img>-->
+<!--        </template>-->
+<!--      </div>-->
+<!--    </template>-->
+  </CornerSection>
 </template>
 
 <style scoped>

@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+	/* .popup {
+		@apply hidden;
+	}
+	.popup.active {
+		z-index:1000 ;
+		@apply flex fixed top-0 left-0 bottom-0 size-full items-center justify-center text-center bg-black/70;
+	}
+	.popup .p-body {
+		@apply w-full;
+	}
+	.popup .p-inner {
+		@apply relative inline-block w-[370px] bg-white; 
+	}
+	.popup .p-head {
+		@apply py-2 text-base pc:text-lg; 
+	}
+	.popup .btn-close {
+		@apply absolute right-1 top-1;
+	} */
+}

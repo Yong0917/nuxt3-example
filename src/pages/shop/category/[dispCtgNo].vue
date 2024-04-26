@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import {CategoryShopApi} from "~/api/display-shop";
-import DynamicTemplate from "~/components/display/dynamic/dynamic-template.vue";
+import DynamicTemplate from "~/components/display/dynamic/DynamicTemplate.vue";
 
 const { params } = useRoute()
 const { template, conrList, categoryInfo } = await CategoryShopApi(params)

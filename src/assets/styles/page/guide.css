@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 가이드 페이지 공통 클래스 */
+@layer utilities {
+  .guide-sub-title {
+    @apply mb-4 text-xl font-bold;
+  }
+
+  .component-container {
+    @apply mb-4 rounded-lg border border-gray-300 bg-white px-8 py-4;
+  }
+
+  .component-container:not(.flex-col) {
+    @apply items-center;
+  }
+
+  .guide-description {
+    @apply mb-4;
+  }
+
+  .guide-description a {
+    @apply text-blue-600 underline;
+  }
+
+  .code-block {
+  }
+}

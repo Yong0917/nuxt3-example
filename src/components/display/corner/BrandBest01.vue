@@ -3,9 +3,7 @@
 </script>
 
 <template>
-  <div>
-    collection02
-  </div>
+
 </template>
 
 <style scoped>
